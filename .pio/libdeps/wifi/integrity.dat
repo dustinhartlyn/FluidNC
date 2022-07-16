@@ -1,0 +1,9 @@
+Update
+WiFiClientSecure
+ESPmDNS
+DNSServer
+TMCStepper@>=0.7.0,<1.0.0
+ArduinoOTA
+WebServer
+WiFi
+arduinoWebSockets=https://github.com/Links2004/arduinoWebSockets
