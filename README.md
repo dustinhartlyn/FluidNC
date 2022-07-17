@@ -24,7 +24,7 @@ Pin configuration is a key step in machine setup. You must assign specific pins 
 
 FluidNC's pin assignment syntax is clear, straightforward, capable and consistent. For example, to assign GPIO 4 as the probe pin, active low, with internal pullups enabled, you write:
 
-```yaml
+```js
 probe:
   pin: gpio.4:low:pu
 ```
