@@ -1,7 +1,3 @@
----
-title: Overview
----
-
 ## Introduction
 
 FluidNC is a CNC firmware optimized for use with the powerful and flexible ESP32 controller. It is the next generation of firmware from the creators of Grbl_ESP32. It has a lot of improvements over Grbl_ESP32 as listed below.
