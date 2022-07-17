@@ -1,41 +1,17 @@
-## Welcome to GitHub Pages
+## Introduction
 
-🚀 🐼
+FluidNC is a CNC firmware optimized for use with the powerful and flexible ESP32 controller. It is the next generation of firmware from the creators of Grbl_ESP32. It has a lot of improvements over Grbl_ESP32 as listed below.
 
-yes
+## Firmware Architecture
 
-You can use the [editor on GitHub](https://github.com/pmarsceill/test-jtd/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+- Object-Oriented hierarchical design
+- Hardware abstraction for machine features like spindles, motors, and stepper drivers
+- Extensible - Adding new features is much easier for the firmware as well as gcode senders.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Machine Definition Method
 
-### Markdown
+Grbl_ESP32 used C preprocessor machine definition files (myMachineDef.h) and config.h to define a machine. Any change required a recompile. The goal with FluidNC is that virtually everyone uses the same compiled firmware and configures it with a structured config file text file. That file is dynamically loaded from the local FLASH on ESP32. It can be uploaded via the serial port or Wifi.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+You can have multiple config files stored on the ESP32. The default is config.yaml, but you can change that with $Config/Filename=<myOtherConfig.yaml>
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pmarsceill/test-jtd/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Basic Grbl Compatibility
