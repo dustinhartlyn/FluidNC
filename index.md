@@ -133,3 +133,21 @@ Wifi/Telnet
 Wifi/WebSockets
 WebUI
 FluidNC includes a built-in brower-based Web UI (Esp32_WebUI) so you control the machine from a PC, phone, or tablet on the same Wifi network.
+
+### Credits
+
+The original Grbl is an awesome project by Sungeon (Sonny) Jeon. I have known him for many years and he is always very helpful. I have used Grbl on many projects.
+
+The Wifi and WebUI is based on this project.
+
+### Contribute
+
+ There is a Discord server for the development this project. Ask for an invite
+
+### FAQ
+
+Start asking questions...I'll put the frequent ones here.
+
+### Donation
+
+This project requires a lot of work and often expensive items for testing. Please consider a safe, secure and highly appreciated donation via the PayPal link below or via the Github sponsor link at the top of the page.
