@@ -142,6 +142,8 @@ The Wifi and WebUI is based on this project.
 
 ### Contribute
 
+We need help with not only continuing to develop this projects, but also help documentation and tutorials. 
+
 ![Discord Serve](/assets/images/discord_logo.png){: width="30" }
  There is a [Discord server](https://discord.com/invite/vGhne3QmFZ) for the development this project. Ask for an invite
 
@@ -153,4 +155,4 @@ Start asking questions...I'll put the frequent ones here.
 
 This project requires a lot of work and often expensive items for testing. Please consider a safe, secure and highly appreciated donation via the PayPal link below or via the Github sponsor link at the top of the page.
 
-[![PayPal Donate](assets/images/any_other_folder/donate_paypal.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TKNJ9Z775VXB2)
+[![PayPal Donate](assets/images/donate_paypal.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TKNJ9Z775VXB2)
