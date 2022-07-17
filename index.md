@@ -142,7 +142,7 @@ The Wifi and WebUI is based on this project.
 
 ### Contribute
 
-![Discord Serve](/assets/images/FluidNC_Logo.png)
+![Discord Serve](/assets/images/discord_logo.png)
  There is a Discord server for the development this project. Ask for an invite
 
 ### FAQ
@@ -152,3 +152,5 @@ Start asking questions...I'll put the frequent ones here.
 ### Donation
 
 This project requires a lot of work and often expensive items for testing. Please consider a safe, secure and highly appreciated donation via the PayPal link below or via the Github sponsor link at the top of the page.
+
+[![PayPal Donate](assets/images/any_other_folder/donate_paypal.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TKNJ9Z775VXB2)
