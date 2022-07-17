@@ -142,6 +142,7 @@ The Wifi and WebUI is based on this project.
 
 ### Contribute
 
+![Discord Serve](/assets/image/discord_logo.png)
  There is a Discord server for the development this project. Ask for an invite
 
 ### FAQ
