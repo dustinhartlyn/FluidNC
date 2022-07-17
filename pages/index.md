@@ -62,3 +62,74 @@ or you can just omit the "flood:" line in the coolant section - or omit the enti
 coolant:
 ```
 ### Tuning
+
+Many parameters like accelerations and speeds need to be tuned when setting up a new machine. These values are in the config file like everything else, but you can also temporarily change them by sending the config file hierarchy for that setting as a $ command. Sending $axes/x/acceleration=50 would change the acceleration of the x axis to 50.
+
+The changes are temporary. To make them permanent you would edit the config file. You can also save the all of the current changes to the config file with the $CD=
+
+You can show the value of an individual parameter by sending its $ name with the =, as:
+
+```js
+ok
+$axes/x/acceleration
+$axes/x/acceleration=25.000
+ok
+```
+
+The first $ line above is what you send, the second is FluidNC's response.
+
+You can show entire subsections by sending the section name:
+
+```js
+ok
+$coolant
+coolant:
+  flood_pin: NO_PIN
+  mist_pin: NO_PIN
+  delay_ms: 0
+ok
+```
+
+Spindles
+FluidNC supports multiple spindles on one machine. Spindles can be controlled by different hardware interfaces like relays, PWM, DACs, or RS485 serial interfaces to VFDs. Lasers are treated as spindles. Each spindle is assigned a range of tool numbers. You change spindles by issuing the GCode command "M6 Tn", where n is the tool number. Tool numbers within the assigned range for a given spindle will activate that spindle - and the detailed number within the range could be used to select the specific tool on the spindle. This lets you have, for example, a single machine with an ATC spindle and a laser. A single GCode file could allow you to etch and cutout a part. Most CAM programs support tool numbers. You could also have a gantry with both a low-speed high-torque pulley spindle and also a high-speed direct drive spindle.
+
+### Motors
+
+FluidNC supports, without recompiling, different motor types like
+
+- Stepper motors
+- Servo motors
+- Dynamixel smart servos
+
+### Stepper Drivers
+
+FluidNC supports, without recompiling, different stepper motor drivers like
+- "Dumb" (hardware configured) stepper drivers like A4988 and DRV8825
+- External drivers
+- Trinamic drivers configured either via hardware jumpers, SPI, or UART interfaces
+
+### Homing and Limits
+
+Homing and limit parameters are setup per axis. Each axis can have its own homing speeds, switch pull offs. Soft limits can be configured, per axis, for arbitrary endpoints and distances.
+
+FluidNC supports many different limit switch configurations. You can have separate limit switches - on separate input pins - on each end of an axis (one on the positive end and the other on the negative end), or just one switch on a designated end, or a pair of switches on both ends that are wired together and fed into a single input pin. The use of separate switches enables things like automatic pulloff for an axis that is already at a limit when the system starts. On machines with dual (ganged) motors on one axis, that axis's limit switches can be shared (applying to both motors), or specific to each motor, thus allowing auto-squaring of the axis during homing.
+
+### Motor Enables
+
+Motor enable/disable pins can either be shared so that a single pin controls all motors, or per-motor so that you can separately enable specific motors.
+
+### Ganged Motors
+
+FluidNC supports up to two motors per axis, with independent drivers and homing. In contrast to classic Grbl where "ganging" can only be done either by driving two motors from the same driver or by sending the same step and direction signal to two drivers, FluidNC's independent motors permit "auto-squaring" of axes. It also supports different switch pull offs in case your switches are not square.
+
+### SD Card Support
+
+Multiple Communications Channels
+FluidNC supports sender communication via multiple channels
+
+Serial / USB Serial Port (as with classic Grbl)
+Bluetooth serial
+Wifi/Telnet
+Wifi/WebSockets
+WebUI
+FluidNC includes a built-in brower-based Web UI (Esp32_WebUI) so you control the machine from a PC, phone, or tablet on the same Wifi network.

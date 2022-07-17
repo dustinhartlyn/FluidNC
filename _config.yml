@@ -4,8 +4,8 @@ color_scheme: "light"
 search_enabled: true
 logo: "/assets/images/FluidNC_Logo.png"
 
-permalink: /:categories/:title:output_ext
-baseurl: /pages
+permalink: /pages/:categories/:title:output_ext
+
 search:
   # Split pages into sections that can be searched individually
   # Supports 1 - 6, default: 2
