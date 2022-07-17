@@ -4,6 +4,6 @@ has_children: true
 nav_order: 2
 ---
 
-# Child of test
+# Configuration
 
-I am a child page.
+Configuration page
