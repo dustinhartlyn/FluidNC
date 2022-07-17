@@ -25,4 +25,13 @@ search:
   rel_url: true
   # Enable or disable the search button that appears in the bottom right corner of every page
   # Supports true or false (default)
-  button: true
+  button: false
+
+
+  # Aux links for the upper right navigation
+aux_links:
+  "FluidNC on GitHub":
+    - "//github.com/bdring/FluidNC" 
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: false
