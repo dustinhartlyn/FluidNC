@@ -3,9 +3,9 @@ title: contribution
 has_children: true
 nav_order: 5
 ---
-{: .no_toc }
+
 # Ways to Contribute
-{: .no_toc .text-delta }
+
 
 
 **Table of Contents**
