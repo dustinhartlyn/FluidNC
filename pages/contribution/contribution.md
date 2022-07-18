@@ -3,12 +3,12 @@ title: contribution
 has_children: true
 nav_order: 5
 ---
-
-# Ways to Contribute
 {: .no_toc }
-### Table of contents
+# Ways to Contribute
 {: .no_toc .text-delta }
+### Table of contents
 
+**Contents**
 * TOC
 {:toc}
 ### Report a bug or suggest a feature
