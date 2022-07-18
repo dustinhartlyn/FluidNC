@@ -8,7 +8,7 @@ nav_order: 5
 {: .no_toc .text-delta }
 
 
-**Contents**
+**Table of Contents**
 * TOC
 {:toc}
 ### Report a bug or suggest a feature
