@@ -9,17 +9,17 @@ nav_order: 5
 ### Table of contents
 {: .no_toc .text-delta }
 
-- TOC
+* TOC
    
 
 
 {:toc}
 ### Report a bug or suggest a feature
 
-Use githubs issue tracker for bugs
+[Use githubs issue tracker for bugs](https://github.com/bdring/FluidNC/issues)
 
-See the development roadmap here
-https://github.com/bdring/FluidNC/projects/1
+[See the development roadmap here](https://github.com/bdring/FluidNC/projects/1)
+
 
 {:toc}
 ### Head over to discord to discuss the project
