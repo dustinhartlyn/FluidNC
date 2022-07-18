@@ -1,5 +1,5 @@
 ---
-title: contribution
+title: Contribution
 has_children: true
 nav_order: 5
 ---
