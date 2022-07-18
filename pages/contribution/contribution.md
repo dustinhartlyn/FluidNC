@@ -15,12 +15,11 @@ nav_order: 5
 
 - [Use githubs issue tracker for bugs](https://github.com/bdring/FluidNC/issues)
 - [See the development roadmap here](https://github.com/bdring/FluidNC/projects/1)
-- [Visit the Discord server for this project](https://discord.com/invite/vGhne3QmFZ)
 
 {:toc}
 ### Head over to discord to discuss the project
 
-some text
+[Visit the Discord server for this project](https://discord.com/invite/vGhne3QmFZ)
 
 {:toc}
 ### Help with the projects site
