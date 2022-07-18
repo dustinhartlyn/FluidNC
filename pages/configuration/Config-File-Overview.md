@@ -10,3 +10,4 @@ FluidNC is configured (adapted to a particular machine) at run-time by reading a
 
 Note: There are still a few items in config.h file and require a recompile. These are rarely changed things and we are working incorporate as many as practical into the config file.
 
+The name of the config file is given by the setting <b>$Config/Filename</b>. Its default value is "config.yaml", but you can change it to another name. You must restart the controller if you change the file or filename.
